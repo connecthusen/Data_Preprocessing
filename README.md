@@ -1,6 +1,6 @@
 # 📊 Working With Data
 
-> A comprehensive, modular Python toolkit for end-to-end data workflows — from ingestion to feature-ready datasets.
+> A learning and reference repository of Jupyter notebooks demonstrating data preprocessing, exploratory analysis, and feature engineering techniques using sklearn and related Python libraries.
 
 ---
 
@@ -110,25 +110,6 @@ Flexible, multi-source data loading utilities supporting structured, semi-struct
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn requests beautifulsoup4 openpyxl
-```
-
-### Quick Start
-
-```python
-# 1. Load your data
-from working_with_data.read_data import read_csv
-df = read_csv("data/sample.csv")
-
-# 2. Explore it
-from working_with_data.EDA import plot_boxplot, plot_scatter
-plot_boxplot(df, column="age")
-plot_scatter(df, x="income", y="spend")
-
-# 3. Engineer features
-from working_with_data.feature_engineering import handle_missing, encode_categorical, scale_features
-df = handle_missing(df, strategy="median")
-df = encode_categorical(df, method="ohe", columns=["city", "gender"])
-df = scale_features(df, method="standard")
 ```
 
 ---
